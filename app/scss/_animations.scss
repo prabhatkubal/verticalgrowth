@@ -1,0 +1,100 @@
+.inVisible{
+    visibility: hidden;
+}
+
+@keyframes fade-in {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fade-in 280ms ease-in-out forwards;
+}
+
+.blur-in {
+    filter: blur(4px);
+}
+.blur-out {
+    filter: blur(0px);
+}
+
+@keyframes fade-out {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.fade-out {
+    animation: fade-out 280ms ease-in-out forwards;
+}
+
+@keyframes vanish-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    99% {
+        opacity: 0;
+        transform: translateY(-4%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-4%);
+    }
+}
+.vanish-up {
+    animation: vanish-up 280ms ease-in-out forwards;
+}
+
+@keyframes unvanish-up {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(4%); 
+    }
+    99% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(4%);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.unvanish-up {
+    animation: unvanish-up 280ms ease-in-out forwards;
+}
+
+@keyframes from-right {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+// .featAnimebtm {
+//     transform: translateY(0%);
+//     opacity: 1;
+//   }
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/app/scss/style.css" />
+    <title>VerticalGrowth</title>
+    <base href="/" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="fallbackWindow inVisible"></div>
+      <nav class="padding-poverall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header_logo">
+          <img src="/images/treelogo.svg" alt="VerticalGrowth" />
+          <div class="logoname">Vertical<span>Growth</span></div>
+        </a>
+
+        <a id="hamburgerAnime" class="header_menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header_links hide-for-mobile">
+          <a href="#">Home</a><a href="/about.html">About</a
+          ><a href="/contact.html">Contact</a
+          ><a href="/allproducts.html">Products</a
+          ><a href="/services.html">Services</a>
+        </div>
+        <a href="#" class="button header_cta hide-for-mobile"
+          >Request CallBack</a
+        >
+      </nav>
+
+      <div class="header_menuitems inVisible">
+        <a href="#">Home</a><a href="/about.html">About</a
+        ><a href="/contact.html">Contact</a><a href="/allproducts.html">Products</a
+        ><a href="/services.html">Services</a>
+      </div>
+    </header>
+
+    <!-- here pro denotes products -->
+    <section class="services serv padding-serv tobeblured">
+      <div class="serv_container serv_card1">
+        <div class="serv_image">
+          <img class="servImg" src="/images/health_adobespark(1).jpg" alt="" />
+        </div>
+        <div class="serv_text">
+          <h2>
+            Get a <span>Health & Life Insurance</span> Plan that covers all
+            yours family's health expanses
+          </h2>
+          <p>
+            Even when you plan for your loved ones future and invest in it,
+            Medical expanse can come any time and can disrupt your investment
+            <span
+              >VerticalGrowth provides various health insurance plan where one
+              can go on with their daily life and will be prepared for what
+              comes next.</span
+            >
+          </p>
+          <a>
+            <button class="serv_button serv_btn1" value="service_health">
+              <span>View products</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="serv_container serv_card2">
+        <div class="serv_image">
+          <img class="servImg" src="/images/accident_adobespark.jpg" alt="" />
+        </div>
+        <div class="serv_text">
+          <h2>
+            Get a <span>AccidentCare</span> Plan that covers all yours family
+            health expanses
+          </h2>
+          <p>
+            Even when you plan for your loved ones future and invest in it,
+            Medical expanse can come any time and can disrupt your investment
+            <span
+              >VerticalGrowth provides various health insurance plan where one
+              can go on with their daily life and will be prepared for what
+              comes next.</span
+            >
+          </p>
+          <a>
+            <button class="serv_button serv_btn2" value="service_accident">
+              <span>View products</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- here Footer is ft denotes footer -->
+    <hr>
+    <footer class="ft footer">
+      <a href="" class="ft_logo">
+        <img src="/images/treelogo.svg" alt="" />
+        <div class="logoname">
+          Vertical<span class="logo_green">Growth</span>
+        </div>
+      </a>
+
+      <div class="ft_social">
+        <a href="#">
+          <img src="/images/icon-facebook.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-twitter.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-pinterest.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-youtube.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-instagram.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="ft_link link_col1">
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacypolicy.html">Home</a>
+      </div>
+
+      <div class="ft_link link_col2">
+        <a href="/products.html">Products</a>
+        <a href="/services.html">Services</a>
+        <a href="/privacypolicy.html">Privacy Policy</a>
+      </div>
+
+      <div class="ft_linklast hide-for-mobile link_col3">
+        <a href="#">HealthInsurance</a>
+        <a href="#">LifeInsurance</a>
+        <a href="#">HomeLoan</a>
+      </div>
+
+      <div class="ft_cta">
+        <a href="" class="button">Request callback</a>
+      </div>
+      <div class="ft_copyright">
+        &copy; VerticalGrowth. All Rights Reserved
+        <p class="ft_developer hide-for-desktop">
+          { Developer : Prabhat Kubal }
+        </p>
+        <p class="ft_developer hide-for-mobile">
+          - - - - - { Developer : Prabhat Kubal } - - - - -
+        </p>
+      </div>
+    </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0-rc.1/dist/js.cookie.min.js"></script>
+    <script src="/app/js/script.js"></script>
+  </body>
+</html>

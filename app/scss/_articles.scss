@@ -1,0 +1,90 @@
+.articles,
+.a {
+
+    background-image: url("/images/RectLight-flip.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    margin-top: -1px;
+    background-size: cover;
+
+    @include breakpoint-down(small) {
+        text-align: center;
+    }
+
+    &_content {
+        
+    }
+
+    &_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &_item {
+        background-color: $white;
+        border-radius: 0.3125rem;
+        overflow: hidden;
+        box-shadow: 0rem 0.1875rem 0.6875rem rgba($color: #8f8f8f, $alpha: 1.0);
+        transition: all 140ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &_image {
+        height: 12.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &_text {
+        padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+        color: $grayishBlue;
+
+        @include breakpoint-up(medium) {
+            padding: 1.875rem 1.5625rem;
+        }
+    }
+
+    &_title {
+        font-size: 1.0625rem;
+        line-height: 1.2;
+        color: $darkBlue;
+        margin-bottom: 0.5rem;
+    }
+
+    &_description {
+        font-size: 0.8125rem;
+    }
+
+    &_button {
+        
+        button {
+            border-radius: 2px;
+            border: none;
+            background-image: linear-gradient(315deg, #1b89d0 0%, #2cacd0 74%);
+            color: $white;
+            font-weight: 500;
+            letter-spacing: 0.08rem;
+            padding: 0.875rem 2.1875rem;
+            cursor: pointer;
+        }
+
+        &:hover {
+            opacity: 0.55;
+            color: rgb(36, 26, 26);
+        }
+    }
+
+}

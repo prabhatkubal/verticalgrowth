@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/app/scss/style.css" />
+    <title>VerticalGrowth</title>
+    <base href="/" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="fallbackWindow inVisible"></div>
+      <nav class="padding-poverall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header_logo">
+          <img src="/images/treelogo.svg" alt="VerticalGrowth" />
+          <div class="logoname">Vertical<span>Growth</span></div>
+        </a>
+
+        <a id="hamburgerAnime" class="header_menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header_links hide-for-mobile">
+          <a href="#">Home</a><a href="/about.html">About</a
+          ><a href="/contact.html">Contact</a
+          ><a href="/allproducts.html">Products</a
+          ><a href="/services.html">Services</a>
+        </div>
+        <a href="#" class="button header_cta hide-for-mobile"
+          >Request CallBack</a
+        >
+      </nav>
+
+      <div class="header_menuitems inVisible">
+        <a href="#">Home</a><a href="/about.html">About</a
+        ><a href="/contact.html">Contact</a
+        ><a href="/allproducts.html">Products</a
+        ><a href="/services.html">Services</a>
+      </div>
+    </header>
+
+    <div class="prolist_container tobeblured">
+      <div class="prolist_mask">
+        <h1 class="prolist_h1">Products</h1>
+        <div class="prolist_filter">
+          <div class="prolist_dropdown">
+            <label class="ct_label" for="type"
+              ><i class="fas fa-filter"></i>&nbsp;Type</label
+            ><br />
+            <select name="type" id="type">
+              <option disabled selected value>-- Select --</option>
+              <option value="healthinsurance">Health Insurance</option>
+              <option value="accidentcare">Accident Care</option>
+            </select>
+          </div>
+          <div class="prolist_dropdown">
+            <label class="ct_label" for="category"
+              ><i class="fas fa-layer-group"></i>&nbsp;Category</label
+            ><br />
+            <select name="category" id="category">
+              <option disabled selected value>-- Select --</option>
+              <option value="family">Family</option>
+              <option value="individual">Individual</option>
+              <option value="student">Student</option>
+              <option value="specialcare">Special Care</option>
+            </select>
+          </div>
+          <div class="prolist_dropdown">
+            <label class="ct_label" for="sortby"
+              ><i class="fas fa-redo"></i>&nbsp;Clear</label
+            ><br />
+            <button class="prolist_button">clear all</button>
+            <!-- <select name="sortby" id="sortby">
+              <option disabled selected value>-- Select --</option>
+              <option value="pricelowhigh">Price low-high</option>
+              <option value="pricehighlow">Price high-low</option>
+              <option value="availability">Availability</option>
+              <option value="policyterm">Policy Term</option>
+            </select> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <section class="prolist productlist padding-prolist">
+      <div class="prolist_contained">
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Cancer Care Gold (Pilot Product)</div>
+            <div class="pro_view">
+              <!-- <a href="#"><i class="fas fa-arrow-right"></i></a> -->
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="1"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Cardiac Care Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="2"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Diabetes safe Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="3"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Senior Citizen Health Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="4"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_image">
+              <div class="pro_info">
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Critical Care Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="5"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Comprehensive Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="6"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Family Health Potima Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="7"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Medi-Classic Insurance Policy Family</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="8"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Micro Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="9"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Family Delite Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="10"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Micro Rural & Farmers Care</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="11"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Arogya Sanjeevani Policy, Star Health</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="12"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Super Surplus Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="13"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Outpatient Care Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="14"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Hospital Cash Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="15"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Special Care Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="16"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Young Star Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="17"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Medi-Classic Insurance Policy (INDV.)</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="18"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Star Virus Care Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="19"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Virus Rakshak Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="20"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Virus Kavach Insurance Policy</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="21"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Accident Care Plan For Students</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="22"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Accident Care Plan For Family</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="23"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pro_item">
+          <div class="pro_image">
+            <div class="pro_info">
+              <i class="fas fa-info-circle"></i>
+            </div>
+          </div>
+          <div class="pro_text">
+            <div class="pro_title">Accident Care Plan For Individuals</div>
+            <div class="pro_view">
+              <!-- <a class="pro_anchor"><i class="fas fa-arrow-right"></i></a> -->
+              <button class="pro_btn" value="24"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- here Footer is ft denotes footer -->
+    <hr />
+    <footer class="ft footer">
+      <a href="" class="ft_logo">
+        <img src="/images/treelogo.svg" alt="" />
+        <div class="logoname">
+          Vertical<span class="logo_green">Growth</span>
+        </div>
+      </a>
+
+      <div class="ft_social">
+        <a href="#">
+          <img src="/images/icon-facebook.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-twitter.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-pinterest.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-youtube.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-instagram.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="ft_link link_col1">
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacypolicy.html">Home</a>
+      </div>
+
+      <div class="ft_link link_col2">
+        <a href="/products.html">Products</a>
+        <a href="/services.html">Services</a>
+        <a href="/privacypolicy.html">Privacy Policy</a>
+      </div>
+
+      <div class="ft_linklast hide-for-mobile link_col3">
+        <a href="#">HealthInsurance</a>
+        <a href="#">LifeInsurance</a>
+        <a href="#">HomeLoan</a>
+      </div>
+
+      <div class="ft_cta">
+        <a href="" class="button">Request callback</a>
+      </div>
+      <div class="ft_copyright">
+        &copy; VerticalGrowth. All Rights Reserved
+        <p class="ft_developer hide-for-desktop">
+          { Developer : Prabhat Kubal }
+        </p>
+        <p class="ft_developer hide-for-mobile">
+          - - - - - { Developer : Prabhat Kubal } - - - - -
+        </p>
+      </div>
+    </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0-rc.1/dist/js.cookie.min.js"></script>
+    <script src="/app/js/script.js"></script>
+  </body>
+</html>

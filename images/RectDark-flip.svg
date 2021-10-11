@@ -1,0 +1,20 @@
+<svg id="RectDark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="250" viewBox="0 0 1440 250">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#31d35c" stop-opacity="0.631"/>
+      <stop offset="0.66" stop-color="#31d35c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="1" x2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="1440" height="250" fill="#2d314d"/>
+  <path id="Path_1" data-name="Path 1" d="M46,0,296,250H557L307,0Z" fill="url(#linear-gradient)"/>
+  <path id="Path_2" data-name="Path 2" d="M253.6,0l250,250H847.1L597.1,0Z" fill="url(#linear-gradient)"/>
+  <path id="Path_3" data-name="Path 3" d="M500.2,0l250,250h267L767.2,0Z" fill="url(#linear-gradient)"/>
+  <path id="Path_4" data-name="Path 4" d="M751.8,0l250,250h225L976.8,0Z" fill="url(#linear-gradient)"/>
+  <path id="Path_5" data-name="Path 5" d="M1422,0,1172,250H1046L1296,0Z" fill="url(#linear-gradient-5)"/>
+  <path id="Path_6" data-name="Path 6" d="M1198.4,0l-250,250H673.9L923.9,0Z" fill="url(#linear-gradient-5)"/>
+  <path id="Path_7" data-name="Path 7" d="M941.8,0l-250,250h-42L899.8,0Z" fill="url(#linear-gradient-5)"/>
+  <path id="Path_8" data-name="Path 8" d="M699.2,0l-250,250H321.7L571.7,0Z" fill="url(#linear-gradient-5)"/>
+  <path id="Path_9" data-name="Path 9" d="M1287.23,97.234,1440,250V97.234Z" transform="translate(0 -97.234)" fill="url(#linear-gradient)"/>
+  <path id="Path_10" data-name="Path 10" d="M0,97.234H152.766L0,250Z" transform="translate(0 -97.234)" fill="url(#linear-gradient-5)"/>
+</svg>

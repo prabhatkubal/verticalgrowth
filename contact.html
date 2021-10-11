@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/app/scss/style.css" />
+    <title>VerticalGrowth</title>
+    <base href="/" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="fallbackWindow inVisible"></div>
+      <nav class="padding-poverall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header_logo">
+          <img src="/images/treelogo.svg" alt="VerticalGrowth" />
+          <div class="logoname">Vertical<span>Growth</span></div>
+        </a>
+
+        <a id="hamburgerAnime" class="header_menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header_links hide-for-mobile">
+          <a href="#">Home</a><a href="/about.html">About</a
+          ><a href="/contact.html">Contact</a
+          ><a href="/allproducts.html">Products</a
+          ><a href="/services.html">Services</a>
+        </div>
+        <a href="#" class="button header_cta hide-for-mobile"
+          >Request CallBack</a
+        >
+      </nav>
+
+      <div class="header_menuitems inVisible">
+        <a href="#">Home</a><a href="/about.html">About</a
+        ><a href="/contact.html">Contact</a><a href="/allproducts.html">Products</a
+        ><a href="/services.html">Services</a>
+      </div>
+    </header>
+    <!-- here ct denotes contact -->
+    <div class="frm_container tobeblured">
+      <form
+        onsubmit="return false"
+        id="form"
+        class="ct contact padding-ctpadding"
+      >
+        <h3>Contact Us</h3>
+        <table class="ct_table">
+          <tbody>
+            <tr class="ct_trName">
+              <td class="tdFirstname">
+                <label class="ct_label" for="firstname">First Name</label><br />
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstName"
+                  placeholder="First Name..."
+                />
+              </td>
+              <td class="tdLastname">
+                <label class="ct_label" for="lastname">Last Name</label><br />
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastName"
+                  placeholder="Last Name..."
+                />
+              </td>
+            </tr>
+            <!-- <tr class="ct_trGender">
+              <td class="tdRadio">
+                <div class="genderName">Gender&nbsp;:</div>
+                <div class="genderOpt">
+                  <input type="radio" id="male" name="gender" value="male" />
+                  Male
+                </div>
+                <div class="genderOpt">
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  Female
+                </div>
+                <div class="genderOpt">
+                  <input type="radio" id="Other" name="gender" value="male" />
+                  Other
+                </div>
+              </td>
+            </tr> -->
+            <tr class="ct_trEmail">
+              <td class="tdUseremail">
+                <label class="ct_label" for="useremail">Email</label>&nbsp;<i class="fas fa-envelope"></i><br/>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email Address..."
+                />
+              </td>
+            </tr>
+            <tr class="ct_trPhonenumber">
+              <td class="tdUserphone">
+                <label class="ct_label" for="phonenumber">Phone Number</label>&nbsp;<i class="fas fa-phone"></i><br />
+                <input
+                  type="tel"
+                  name="phonenumber"
+                  id="phoneNumber"
+                  placeholder="Your Phone Number..."
+                />
+              </td>
+            </tr>
+            <tr class="ct_trSubject">
+              <td class="Usersubject">
+                <label class="ct_label" for="subject">Subject</label><br />
+                <select name="subject" id="subject">
+                  <option disabled selected value>
+                    -- Select an option --
+                  </option>
+                  <option value="homeloan">Home Loan</option>
+                  <option value="carloan">Car Loan</option>
+                  <option value="lifeinsurrance">Life Insurrance</option>
+                  <option value="other">Other</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="ct_trMessage">
+              <td class="tdUsermessage">
+                <label class="ct_label" for="message">Message</label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  class="fcf-form-control"
+                  rows="4"
+                  maxlength="2000"
+                  required
+                ></textarea>
+                <!-- <input
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="We are here to help you ask us questions ?"
+                /> -->
+              </td>
+            </tr>
+            <tr class="ct_trSubmitbtn">
+              <td class="tdSubmitbtn">
+                <button
+                  type="submit"
+                  id="submit"
+                  class="submit_btn"
+                  value="submit"
+                >
+                  Submit
+                </button>
+                <!-- <input
+                  type="reset"
+                  id="submit"
+                  class="submit_input"
+                  value="reset"
+                  onclick="this.form.reset();"
+                /> -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+
+    <!-- here Footer is ft denotes footer -->
+    <hr>
+    <footer class="ft footer">
+      <a href="" class="ft_logo">
+        <img src="/images/treelogo.svg" alt="" />
+        <div class="logoname">
+          Vertical<span class="logo_green">Growth</span>
+        </div>
+      </a>
+
+      <div class="ft_social">
+        <a href="#">
+          <img src="/images/icon-facebook.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-twitter.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-pinterest.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-youtube.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-instagram.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="ft_link link_col1">
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacypolicy.html">Home</a>
+      </div>
+
+      <div class="ft_link link_col2">
+        <a href="/products.html">Products</a>
+        <a href="/services.html">Services</a>
+        <a href="/privacypolicy.html">Privacy Policy</a>
+      </div>
+
+      <div class="ft_linklast hide-for-mobile link_col3">
+        <a href="#">HealthInsurance</a>
+        <a href="#">LifeInsurance</a>
+        <a href="#">HomeLoan</a>
+      </div>
+
+      <div class="ft_cta">
+        <a href="" class="button">Request callback</a>
+      </div>
+      <div class="ft_copyright">
+        &copy; VerticalGrowth. All Rights Reserved
+        <p class="ft_developer hide-for-desktop">
+          { Developer : Prabhat Kubal }
+        </p>
+        <p class="ft_developer hide-for-mobile">
+          - - - - - { Developer : Prabhat Kubal } - - - - -
+        </p>
+      </div>
+    </footer>
+
+    <script src="/app/js/script.js"></script>
+    <script></script>
+  </body>
+</html>

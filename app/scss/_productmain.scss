@@ -1,0 +1,74 @@
+.productmain,
+.promain {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // flex-direction: column;
+
+  &_box {
+    padding: 2.5rem 1.4375rem;
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.25rem 0.75rem;
+      text-align: center;
+
+      i {
+        font-size: 4rem;
+        color: yellowgreen;
+      }
+    }
+
+    select {
+      width: 80vw;
+      padding: 1rem 0rem;
+      margin: 0.5rem auto;
+      text-align: center;
+      font-size: 1.25rem;
+      color: #2d314d;
+      background-color: #e9e9ed;
+      border: 1px solid #84848445;
+      border-radius: 3px;
+    }
+
+    button {
+      position: relative;
+      display: flex;
+      margin: 0.5rem auto;
+      align-self: center;
+      font-size: 1.125rem;
+      padding: 0.875rem 2.1875rem;
+      letter-spacing: 0.1rem;
+      background-image: linear-gradient(315deg, #1b89d0 0%, #2cacd0 74%);
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+
+      &:hover {
+        filter: hue-rotate(350deg);
+      }
+
+      .promainsubmit {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        font-size: 1.125rem;
+        letter-spacing: 0.1rem;
+        background: transparent;
+        cursor: pointer;
+        margin: 0 auto;
+        background: transparent;
+        padding: 0.875rem 2.1875rem;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .indiv1A-sel {
+    display: block;
+  }
+}

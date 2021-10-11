@@ -1,0 +1,179 @@
+.frm_container {
+  // background-image: url("/images/SVG/Wave.svg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // content: "";
+  // background-position: left;
+
+  background-color: white;
+  padding: 1px 5px 10px 5px;
+
+  // @include breakpoint-down(small) {
+  //   background-position-x: 80%;
+  // }
+
+  form {
+    @include breakpoint-down (small) {
+      padding: 0;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+      align-items: center;
+      
+      h3 {
+        @include breakpoint-down(small) {
+         
+        }
+      }
+    }
+  }
+}
+
+.contact,
+.ct {
+  margin: auto;
+  width: 80%;
+  border-radius: 1rem;
+  margin: 1rem auto 0rem;
+
+  @include breakpoint-down(small) {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin: 0.8rem auto;
+  }
+
+  input,
+  #message {
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #8c8c8c;
+    box-sizing: border-box;
+    font-size: $font-sm;
+    margin-top: 0.25px;
+    margin-bottom: 0.9375rem;
+    resize: vertical;
+    border-radius: 0.125rem;
+  }
+
+  &_table {
+    width: 100%;
+  }
+
+  &_trName {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+    td {
+      width: 50%;
+    }
+  }
+
+  &_trGender {
+   width: 100%;
+
+    td {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 50%;
+
+      .genderOpt {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        justify-content: space-around;
+        width: 28%;
+      }
+
+      .genderName {
+        margin-right: 0.625rem;
+      }
+    }
+  }
+
+  &_trEmail {
+  }
+
+  &_trPhonenumber {
+  }
+
+  &_trSubject {
+    width: 100%;
+
+    #subject {
+      width: 100%;
+      font-size: $font-sm;
+      padding: 0.25rem;
+      border: 1px solid #8c8c8c;
+      box-sizing: border-box;
+      margin-top: 0.25px;
+      margin-bottom: 0.9375rem;
+      resize: vertical;
+      border-radius: 0.125rem;
+
+      option {
+        background-color: #2d314d;
+        color: white;
+        border: none;
+
+        option {
+          background-color: #2d314d;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &_trMessages {
+  }
+
+  &_trSubmitbtn {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+
+    button {
+      border-radius: 2px;
+      border: none;
+      background-image: linear-gradient(315deg, #1b89d0 0%, #2cacd0 74%);
+      color: $white;
+      font-weight: 500;
+      letter-spacing: 0.08rem;
+      padding: 0.875rem 2.1875rem;
+      cursor: pointer;
+
+      &:hover {
+        filter: hue-rotate(350deg);
+      }
+    }
+
+    // .submit_input {
+    //   border-radius: 2px;
+    //   border: none;
+    //   background-image: linear-gradient(315deg, #1b89d0 0%, #2cacd0 74%);
+    //   color: $white;
+    //   font-weight: 500;
+    //   letter-spacing: 0.08rem;
+    //   padding: 0.875rem 2.1875rem;
+    //   cursor: pointer;
+    //   width: 8rem;
+    //   height: 2.8125rem;
+
+    //   &:hover {
+    //     filter: hue-rotate(350deg);
+    //   }
+    // }
+
+  }
+}
+
+.placeholderRed {
+  border: 1px solid red;
+}

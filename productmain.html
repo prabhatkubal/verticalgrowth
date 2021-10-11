@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/app/scss/style.css" />
+    <link rel="stylesheet" href="/app/scss/style.css">
+    <title>VerticalGrowth</title>
+    <base href="/" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="fallbackWindow inVisible"></div>
+      <nav class="padding-poverall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header_logo">
+          <img src="/images/treelogo.svg" alt="VerticalGrowth" />
+          <div class="logoname">Vertical<span>Growth</span></div>
+        </a>
+
+        <a id="hamburgerAnime" class="header_menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header_links hide-for-mobile">
+          <a href="#">Home</a><a href="/about.html">About</a
+          ><a href="/contact.html">Contact</a
+          ><a href="/allproducts.html">Products</a
+          ><a href="/services.html">Services</a>
+        </div>
+        <a href="#" class="button header_cta hide-for-mobile"
+          >Request CallBack</a
+        >
+      </nav>
+
+      <div class="header_menuitems inVisible">
+        <a href="#">Home</a><a href="/about.html">About</a
+        ><a href="/contact.html">Contact</a
+        ><a href="/allproducts.html">Products</a
+        ><a href="/services.html">Services</a>
+      </div>
+    </header>
+    <div class="productmain promain tobeblured">
+      <!-- <form action="/python/python.py" method="post">
+      </form> -->
+      <div class="promain_box promain_1">
+        <ol class="mainproduct_ol health_ol1">
+            <li>
+              <i class="fas fa-hands"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Cancer Care Gold (Pilot Product)</p>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="150000">150000</option>
+                    <option value="250000">250000</option>
+                    <option value="300000">300000</option>
+                    <option value="500000">500000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="5m-29yrs">5 Months - 29 years</option>
+                    <option value="30-39yrs">30-39 years</option>
+                    <option value="40-49yrs">40-49 years</option>
+                    <option value="50-59yrs">50-59 years</option>
+                    <option value="60-69yrs">60-69 years</option>
+                    <option value="above-69">Above 69</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="1" class="promainbtn">Search
+                  <input class="promainsubmit" type="submit" value="Search">
+                </button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_2">
+        <ol class="mainproduct_ol health_ol7">
+            <li>
+                <i class="fas fa-heartbeat"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Cardiac Care Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="300000">3,00,000</option>
+                    <option value="400000">4,00,000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="10-60yrs">10 - 60yrs</option>
+                    <option value="61-65yrs">61 - 65yrs</option>
+                    <option value="66-70yrs">66 - 70yrs</option>
+                    <option value="71-80yrs">71 - 80yrs</option>
+                    <option value="above-80">Above 80yrs</option>
+                </select>
+            </li>
+            <li>
+                <select  name="planType" id="planTypeProd" class="planTypePros">
+                    <option disabled selected value>Plan Type:</option>
+                    <option value="silverplan">Silver Plan</option>
+                    <option value="goldplan">Gold Plan</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="2" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_3">
+        <ol class="mainproduct_ol health_ol8">
+            <li>
+                <i class="fas fa-procedures"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Diabetes Safe Insurance Policy</p>
+            </li>
+            <li>
+                <div data-role="fieldcontain">
+                    <fieldset data-type="horizontal" class="p_type">
+                        <legend>Policy Type:</legend>
+                        <input type="radio" name="policy-typepro3" id="radio-choice-1" value="individual"
+                            checked="checked" />
+                        <label for="radio-choice-1">INDIVIDUAL</label>
+
+                        <input type="radio" name="policy-typepro3" id="radio-choice-2" value="floater-2A" />
+                        <label for="radio-choice-2">FLOATER (2A)</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="300000">300000</option>
+                    <option value="400000">400000</option>
+                    <option value="500000">500000</option>
+                    <option value="1000000">1000000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="18-30yrs">18 - 30</option>
+                    <option value="31-35yrs">31 - 35</option>
+                    <option value="36-40yrs">36 - 40</option>
+                    <option value="41-45yrs">41 - 45</option>
+                    <option value="46-50yrs">46 - 50</option>
+                    <option value="51-55yrs">51 - 55</option>
+                    <option value="56-60yrs">56 - 60</option>
+                    <option value="61-65yrs">61 - 65</option>
+                    <option value="66-70yrs">66 - 70</option>
+                    <option value="71-75yrs">71 - 75</option>
+                    <option value="76-80yrs">76 - 80</option>
+                    <option value="above-80">Above 80</option>
+                </select>
+            </li>
+            <li>
+                <select  name="planType" id="planTypeProd" class="planTypePros">
+                    <option disabled selected value>Plan Type:</option>
+                    <option value="plana">PLAN A</option>
+                    <option value="planb">PLAN B</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="3" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_4">
+        <ol class="mainproduct_ol health_ol21">
+            <li>
+                <i class="fas fa-blind"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Senior Citizens Health Insurance Policy</p>
+            </li>
+            <li>
+                <div data-role="fieldcontain">
+                    <fieldset data-type="horizontal" class="p_type">
+                        <legend>Policy Type:</legend>
+                        <input type="radio" name="policy-typepro4" id="radio-choice-1" value="individual-1A"
+                            checked="checked" />
+                        <label for="radio-choice-1">Individual(1A)</label>
+
+                        <input type="radio" name="policy-typepro4" id="radio-choice-2" value="floater-2A" />
+                        <label for="radio-choice-2">Floater(2A)</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="100000" class="indiv1A-sel">100000</option>
+                    <option value="200000" class="indiv1A-sel">200000</option>
+                    <option value="300000" class="indiv1A-sel">300000</option>
+                    <option value="400000" class="indiv1A-sel">400000</option>
+                    <option value="500000" class="indiv1A-sel">500000</option>
+                    <option value="750000" class="indiv1A-sel">750000</option>
+                    <option value="1000000" class="float2A-sel">1000000</option>
+                    <option value="1500000" class="float2A-sel">1500000</option>
+                    <option value="2000000" class="float2A-sel">2000000</option>
+                    <option value="2500000" class="float2A-sel">2500000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                    <option disabled selected value>Policy Term:</option>
+                    <option value="1yrs">1yr</option>
+                    <option value="2yrs">2yr</option>
+                    <option value="3yrs">3yr</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="4" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_5">
+      <ol class="mainproduct_ol health_ol13">
+          <li>
+            <i class="fas fa-hand-holding-medical"></i>
+          </li>
+          <li>
+              <p class="mainproduct_p proheading">Star Critical Care Insurance Policy</p>
+          </li>
+          <li>
+              <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                  <option disabled selected value>Sum Insured (INR):</option>
+                  <option value="200000">200000</option>
+                  <option value="300000">300000</option>
+                  <option value="400000">400000</option>
+                  <option value="500000">500000</option>
+                  <option value="1000000">1000000</option>
+              </select>
+          </li>
+          <li>
+              <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                  <option disabled selected value>Age Band:</option>
+                  <option value="18-35yrs">18-35yrs</option>
+                  <option value="36-45yrs">36-45yrs</option>
+                  <option value="46-55yrs">46-55yrs</option>
+                  <option value="56-65yrs">56-65yrs</option>
+                  <option value="above-65">Above65yrs</option>
+              </select>
+          </li>
+          <li class="mainproductsearch_btn">
+              <button value="5" class="promainbtn">Search</button>
+          </li>
+      </ol>
+      </div>
+      <div class="promain_box promain_6">
+        <ol class="mainproduct_ol health_ol5">
+            <li>
+                <i class="fas fa-people-carry"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Comprehensive Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                    <option disabled selected value>Policy Term:</option>
+                    <option value="1yrs">1yr</option>
+                    <option value="2yrs">2yrs</option>
+                    <option value="3yrs">3yrs</option>
+                </select>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type:</option>
+                    <option value="1A">1A</option>
+                    <option value="1A+1C">1A + 1C</option>
+                    <option value="1A+2C">1A + 2C</option>
+                    <option value="1A+3C">1A + 3C</option>
+                    <option value="2A">2A</option>
+                    <option value="2A+1C">2A + 1C</option>
+                    <option value="2A+2C">2A + 2C</option>
+                    <option value="2A+3C">2A + 3C</option>
+                </select>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="500000">500000</option>
+                    <option value="750000">750000</option>
+                    <option value="1000000">1000000</option>
+                    <option value="1500000">1500000</option>
+                    <option value="2000000">2000000</option>
+                    <option value="2500000">2500000</option>
+                    <option value="5000000">5000000</option>
+                    <option value="7500000">7500000</option>
+                    <option value="10000000">10000000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="3m-35yrs">3m - 35</option>
+                    <option value="36-45yrs">36 - 45</option>
+                    <option value="46-50yrs">46 - 50</option>
+                    <option value="51-55yrs">51 - 55</option>
+                    <option value="56-60yrs">56 - 60</option>
+                    <option value="61-65yrs">61 - 65</option>
+                    <option value="66-70yrs">66 - 70</option>
+                    <option value="71-75yrs">71 - 75</option>
+                    <option value="above-75">>75</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="6" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_7">
+        <ol class="mainproduct_ol health_ol6">
+            <li>
+                <i class="fas fa-file-medical"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Family Health Optima Insurance Plan</p>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type :</option>
+                    <option value="1A+1C">1A + 1C</option>
+                    <option value="1A+2C">1A + 2C</option>
+                    <option value="1A+3C">1A + 3C</option>
+                    <option value="2A">2A</option>
+                    <option value="2A+1C">2A + 1C</option>
+                    <option value="2A+2C">2A + 2C</option>
+                    <option value="2A+3C">2A + 3C</option>
+                </select>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="100000">100000</option>
+                    <option value="200000">200000</option>
+                    <option value="300000">300000</option>
+                    <option value="400000">400000</option>
+                    <option value="500000">500000</option>
+                    <option value="1000000">1000000</option>
+                    <option value="1500000">1500000</option>
+                    <option value="2000000">2000000</option>
+                    <option value="2500000">2500000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="16d-35yrs">16days - 35</option>
+                    <option value="36-45yrs">36 - 45</option>
+                    <option value="46-50yrs">46 - 50</option>
+                    <option value="51-55yrs">51 - 55</option>
+                    <option value="56-60yrs">56 - 60</option>
+                    <option value="61-65yrs">61 - 65</option>
+                    <option value="66-70yrs">66 - 70</option>
+                    <option value="71-75yrs">71 - 75</option>
+                    <option value="76-80yrs">76 - 80</option>
+                    <option value="above-80">above 80</option>
+                </select>
+            </li>
+            <li>
+                <select  name="zone" id="zoneProd" class="zonePros">
+                    <option disabled selected value>Zone :</option>
+                    <option value="zone-1">Zone 1</option>
+                    <option value="zone-1a">Zone 1a</option>
+                    <option value="zone-2">Zone 2</option>
+                    <option value="zone-3">Zone 3</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="7" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_8">
+        <ol class="mainproduct_ol health_ol10">
+            <li>
+                <i class="fas fa-fist-raised"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Medi-Classic Insurance Policy (Family)</p>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type :</option>
+                    <option value="2A">2A</option>
+                    <option value="2A+1C">2A + 1C</option>
+                    <option value="2A+2C">2A + 2C</option>
+                </select>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="200000">2,00,000</option>
+                    <option value="300000">3,00,000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                    <option disabled selected value>Policy Term :</option>
+                    <option value="1yrs">1yr</option>
+                    <option value="2yrs">2yr</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="5m-25yrs">5 months - 25 years</option>
+                    <option value="26-30yrs">26-30</option>
+                    <option value="31-35yrs">31-35</option>
+                    <option value="36-40yrs">36-40</option>
+                    <option value="41-45yrs">41-45</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="8" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_9">
+        <ol class="mainproduct_ol health_ol11">
+            <li>
+                <i class="fas fa-hospital-user"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Care Micro Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type :</option>
+                    <option value="1A">1A</option>
+                    <option value="1A+1C">1A + 1C</option>
+                    <option value="1A+2C">1A + 2C</option>
+                    <option value="2A">2A</option>
+                    <option value="2A+1C">2A + 1C</option>
+                    <option value="2A+2C">2A + 2C</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="2m-25yrs">2 - 25</option>
+                    <option value="26-40yrs">26 - 40</option>
+                    <option value="41-50yrs">41 - 50</option>
+                    <option value="51-60yrs">51 - 60</option>
+                    <option value="61-65yrs">61 - 65</option>
+                    <option value="66-70yrs">66 - 70</option>
+                    <option value="above-70">Above 70</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="9" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_10">
+        <ol class="mainproduct_ol health_ol14">
+            <li>
+                <i class="fas fa-clinic-medical"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Family Delite Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type :</option>
+                    <option value="1A+1C">1A+1C</option>
+                    <option value="1A+2C">1A+2C</option>
+                    <option value="1A+3C">1A+3C</option>
+                    <option value="2A">2A</option>
+                    <option value="2A+1C">2A+1C</option>
+                    <option value="2A+2C">2A+2C</option>
+                </select>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="200000">2,00,000</option>
+                    <option value="300000">3,00,000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="5m-35yrs">5mnths-35</option>
+                    <option value="36-45yrs">36-45</option>
+                    <option value="46-50yrs">46-50</option>
+                    <option value="51-55yrs">51-55</option>
+                    <option value="56-60yrs">56-60</option>
+                    <option value="61-65yrs">61-65</option>
+                    <option value="66-70yrs">66-70</option>
+                    <option value="71-75yrs">71-75</option>
+                    <option value="above-75">Above 75yrs</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="10" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_11">
+        <ol class="mainproduct_ol health_ol15">
+            <li>
+                <i class="fas fa-tractor"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Micro Rural & Farmers Care</p>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type :</option>
+                    <option value="1A">1A</option>
+                    <option value="1A+1C">1A+1C</option>
+                    <option value="1A+2C">1A+2C</option>
+                    <option value="2A">2A</option>
+                    <option value="2A+1C">2A+1C</option>
+                    <option value="2A+2C">2A+2C</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="18-35yrs">18-35</option>
+                    <option value="36-45yrs">36-45</option>
+                    <option value="46-55yrs">46-55</option>
+                    <option value="56-65yrs">56-65</option>
+                    <option value="above-65">Above 65</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="11" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_12">
+        <ol class="mainproduct_ol health_ol18">
+            <li>
+                <i class="fas fa-praying-hands"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Arogya Sanjeevani Policy, Star Health</p>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type :</option>
+                    <option value="Individual">Individual</option>
+                    <option value="2A">2A</option>
+                </select>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="100000">1,00,000</option>
+                    <option value="150000">1,50,000</option>
+                    <option value="200000">2,00,000</option>
+                    <option value="250000">2,50,000</option>
+                    <option value="300000">3,00,000</option>
+                    <option value="350000">3,50,000</option>
+                    <option value="400000">4,00,000</option>
+                    <option value="450000">4,50,000</option>
+                    <option value="500000">5,00,000</option>
+                    <option value="550000">5,50,000</option>
+                    <option value="600000">6,00,000</option>
+                    <option value="650000">6,50,000</option>
+                    <option value="700000">7,00,000</option>
+                    <option value="750000">7,50,000</option>
+                    <option value="800000">8,00,000</option>
+                    <option value="850000">8,50,000</option>
+                    <option value="900000">9,00,000</option>
+                    <option value="950000">9,50,000</option>
+                    <option value="1000000">10,00,000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="3m-35yrs">3m-35</option>
+                    <option value="36-45yrs">36-45</option>
+                    <option value="46-50yrs">46-50</option>
+                    <option value="51-55yrs">51-55</option>
+                    <option value="56-60yrs">56-60</option>
+                    <option value="61-65yrs">61-65</option>
+                    <option value="66-70yrs">66-70</option>
+                    <option value="71-75yrs">71-75</option>
+                    <option value="76-80yrs">76-80</option>
+                    <option value="above-80">Above 80</option>
+                </select>
+            </li>
+            <li>
+                <select  name="Child" id="ChildPros">
+                    <option disabled selected value>Child</option>
+                    <option value="none">none</option>
+                    <option value="1-child">1</option>
+                    <option value="2-child">2</option>
+                    <option value="3-child">3</option>
+                    <option value="4-child">4</option>
+                    <option value="5-child">5</option>
+                    <option value="6-child">6</option>
+                    <option value="7-child">7</option>
+                </select>
+            </li>
+            <li>
+                <p class="mainproduct_p">P = Parent</p>
+            </li>
+            <li>
+                <ul class="promainul">
+                    <li>
+                        <select  name="P1 age" id="P1AgePros">
+                            <option disabled selected value>P1 age:</option>
+                            <option value="none">none</option>
+                            <option value="upto-60">up to 60</option>
+                            <option value="61-70yrs">61-70</option>
+                            <option value="above-70">Above 70</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select  name="P2 age" id="P2AgePros">
+                            <option disabled selected value>P2 age:</option>
+                            <option value="none">none</option>
+                            <option value="upto-60">up to 60</option>
+                            <option value="61-70yrs">61-70</option>
+                            <option value="above-70">Above 70</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select  name="P3 age" id="P3AgePros">
+                            <option disabled selected value>P3 age:</option>
+                            <option value="none">none</option>
+                            <option value="upto-60">up to 60</option>
+                            <option value="61-70yrs">61-70</option>
+                            <option value="above-70">Above 70</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select  name="P4 age" id="P4AgePros">
+                            <option disabled selected value>P4 age:</option>
+                            <option value="none">none</option>
+                            <option value="upto-60">up to 60</option>
+                            <option value="61-70yrs">61-70</option>
+                            <option value="above-70">Above 70</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="12" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_13">
+        <ol class="mainproduct_ol health_ol20">
+            <li>
+                <i class="fas fa-medkit"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Super Surplus Insurance Policy</p>
+            </li>
+            <li>
+                <div data-role="fieldcontain">
+                    <fieldset data-type="horizontal" class="p_type">
+                        <legend>Policy Type:</legend>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"
+                            checked="checked" />
+                        <label for="radio-choice-1">Individual(1A)</label>
+
+                        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" />
+                        <label for="radio-choice-2">Floater</label>
+                    </fieldset>
+                </div>
+            </li>
+            <li>
+                <select  name="planType" id="planTypeProd" class="planTypePros">
+                    <option disabled selected value>Plan Type :</option>
+                    <option value="silverplan">Silver Plan</option>
+                    <option value="goldplan">Gold Plan</option>
+                </select>
+            </li>
+            <li>
+                <select  name="deductible" id="deductiblePros">
+                    <option disabled selected value>Deductible:</option>
+                    <option value="300000">3,00,000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="700000">700000</option>
+                    <option value="1000000">1000000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="91-35yrs">91days - 35</option>
+                    <option value="36-45yrs">36-45</option>
+                    <option value="46-50yrs">46-50</option>
+                    <option value="51-55yrs">51-55</option>
+                    <option value="56-60yrs">56-60</option>
+                    <option value="61-65yrs">61-65</option>
+                    <option value="66-70yrs">66-70</option>
+                    <option value="71-75yrs">71-75</option>
+                    <option value="76-80yrs">76-80</option>
+                    <option value="above-80">above 80</option>
+                </select>
+            </li>
+            <li>
+                <select  name="members" id="membersProd" class="membersPros">
+                    <option disabled selected value>Members:</option>
+                    <option value="1A">1A</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="13" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_14">
+        <ol class="mainproduct_ol health_ol17">
+            <li>
+                <i class="fas fa-user-injured"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Outpatient Care Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="members" id="membersProd" class="membersPros">
+                    <option disabled selected value>Members:</option>
+                    <option value="1-member">1 Member</option>
+                    <option value="2-member">2 Members</option>
+                    <option value="3-member">3 Members</option>
+                    <option value="4-member">4 Members</option>
+                    <option value="5-member">5 Members</option>
+                    <option value="6-member">6 Members</option>
+                </select>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="25000">25000</option>
+                    <option value="50000">50000</option>
+                    <option value="75000">75000</option>
+                    <option value="100000">100000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="planType" id="planTypeProd" class="planTypePros">
+                    <option disabled selected value>Plan Type :</option>
+                    <option value="silverplan">Silver Plan</option>
+                    <option value="goldplan">Gold Plan</option>
+                    <option value="platinumplan">Platinum Plan</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="14" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_15">
+        <ol class="mainproduct_ol health_ol16">
+            <li>
+                <i class="fas fa-piggy-bank"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Hospital Cash Insurance Policy</p>
+            </li>
+            <li>
+                <p class="mainproduct_p">This plan is under development very soon it will be available</p>
+            </li>
+            <!-- <li class="mainproductsearch_btn">
+                <button value="15" class="promainbtn">Search</button>
+            </li> -->
+        </ol>
+      </div>
+      <div class="promain_box promain_16">
+        <ol class="mainproduct_ol health_ol12">
+            <li>
+                <i class="fas fa-user-nurse"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Star Special Care Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="3-10yrs">3 - 10</option>
+                    <option value="11-20yrs">11 - 20</option>
+                    <option value="21-25yrs">21 - 25</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="16" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_17">
+        <ol class="mainproduct_ol health_ol19">
+            <li>
+                <i class="fas fa-child"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Young Star Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                    <option disabled selected value>Sum Insured (INR):</option>
+                    <option value="300000">3,00,000</option>
+                    <option value="500000">5,00,000</option>
+                    <option value="1000000">10,00,000</option>
+                    <option value="1500000">15,00,000</option>
+                    <option value="2000000">20,00,000</option>
+                    <option value="2500000">25,00,000</option>
+                    <option value="5000000">50,00,000</option>
+                    <option value="7500000">75,00,000</option>
+                    <option value="10000000">100,00,000</option>
+                </select>
+            </li>
+            <li>
+                <select  name="policyType" id="policyTypeProd" class="policyTypePros">
+                    <option disabled selected value>Policy Type :</option>
+                    <option value="1A">1A</option>
+                </select>
+            </li>
+            <li>
+                <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                    <option disabled selected value>Policy Term:</option>
+                    <option value="1yrs">1yr</option>
+                    <option value="2yrs">2yr</option>
+                </select>
+            </li>
+            <li>
+                <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                    <option disabled selected value>Age Band:</option>
+                    <option value="18-30yrs">18-30</option>
+                    <option value="31-35yrs">31-35</option>
+                    <option value="36-40yrs">36-40</option>
+                </select>
+            </li>
+            <li>
+                <select  name="planType" id="planTypeProd" class="planTypePros">
+                    <option disabled selected value>Plan Type :</option>
+                    <option value="silverplan">Silver Plan</option>
+                    <option value="goldplan">Gold Plan</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="17" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="promain_box promain_18">
+          <ol class="mainproduct_ol health_ol9">
+              <li>
+                <i class="fas fa-hand-holding-heart"></i>
+              </li>
+              <li>
+                  <p class="mainproduct_p proheading">Medi-Classic Insurance Policy (INDV.)</p>
+              </li>
+              <li>
+                  <div data-role="fieldcontain">
+                      <fieldset data-type="horizontal" class="p_type">
+                          <legend>Policy Type:</legend>
+                          <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"
+                              checked="checked" />
+                          <label for="radio-choice-1">Regular</label>
+
+                          <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" />
+                          <label for="radio-choice-2">Golden</label>
+                      </fieldset>
+                  </div>
+              </li>
+              <li>
+                  <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                      <option disabled selected value>Sum Insured (INR):</option>
+                      <option value="300000">150000</option>
+                      <option value="300000">200000</option>
+                      <option value="300000">300000</option>
+                      <option value="400000">400000</option>
+                      <option value="500000">500000</option>
+                      <option value="1000000">1000000</option>
+                      <option value="1500000">1500000</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                      <option disabled selected value>Policy Term :</option>
+                      <option value="1yrs">1</option>
+                      <option value="2yrs">2</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="ageBand" id="ageBandProd" class="ageBandPros">
+                      <option disabled selected value>Age Band:</option>
+                      <option value="5m-35yrs">5 months - 35 years</option>
+                      <option value="36-45yrs">36 - 45</option>
+                      <option value="46-50yrs">46 - 50</option>
+                      <option value="51-55yrs">51 - 55</option>
+                      <option value="56-60yrs">56 - 60</option>
+                      <option value="61-65yrs">61 - 65</option>
+                      <option value="66-70yrs">66 - 70</option>
+                      <option value="71-75yrs">71 - 75</option>
+                      <option value="76-80yrs">76 - 80</option>
+                      <option value="above-80">Above 80</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="zone" id="zoneProd" class="zonePros">
+                      <option disabled selected value>Zone :</option>
+                      <option value="zone-1">Zone 1</option>
+                      <option value="zone-2">Zone 2</option>
+                  </select>
+              </li>
+              <li class="mainproductsearch_btn">
+                  <button value="18" class="promainbtn">Search</button>
+              </li>
+          </ol>
+      </div>
+      <div class="promain_box promain_19">
+          <ol class="mainproduct_ol health_ol2">
+              <li>
+                <i class="fas fa-virus"></i>
+              </li>
+              <li>
+                  <p class="mainproduct_p proheading">Star Virus Insurance Policy</p>
+              </li>
+              <li>
+                  <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                      <option disabled selected value>Sum Insured (INR):</option>
+                      <option value="21000">21,000</option>
+                      <option value="42000">42,000</option>
+                  </select>
+              </li>
+              <li class="mainproductsearch_btn">
+                  <button value="19" class="promainbtn">Search</button>
+              </li>
+          </ol>
+      </div>
+      <div class="promain_box promain_20">
+          <ol class="mainproduct_ol health_ol3">
+              <li>
+                <i class="fas fa-hands-wash"></i>
+              </li>
+              <li>
+                  <p class="mainproduct_p proheading">Virus Raksha Policy</p>
+              </li>
+              <li>
+                  <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                      <option disabled selected value>Sum Insured (INR):</option>
+                      <option value="50000">50000</option>
+                      <option value="100000">100000</option>
+                      <option value="150000">150000</option>
+                      <option value="200000">200000</option>
+                      <option value="250000">250000</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                      <option disabled selected value>Policy Term:</option>
+                      <option value="3m-15d">3 Months and 15 day</option>
+                      <option value="6m-15d">6 Months and 15 day</option>
+                      <option value="9m-15d">9 Months and 15 day</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="policyTerm" id="policyTerm" class="policyTermPros">
+                      <option disabled selected value>Policy Term:</option>
+                      <option value="1yrs">1</option>
+                      <option value="2yrs">2</option>
+                      <option value="3yrs">3</option>
+                      <option value="4yrs">4</option>
+                      <option value="5yrs">5</option>
+                  </select>
+              </li>
+              <li class="mainproductsearch_btn">
+                  <button value="20" class="promainbtn">Search</button>
+              </li>
+          </ol>
+      </div>
+      <div class="promain_box promain_21">
+          <ol class="mainproduct_ol health_ol4">
+              <li>
+                <i class="fas fa-shield-virus"></i>
+              </li>
+              <li>
+                  <p class="mainproduct_p proheading">Virus Kavach Policy</p>
+              </li>
+              <li>
+                  <select  name="sumInsured" id="sumInsProd" class="sumInsPros">
+                      <option disabled selected value>Sum Insured (INR):</option>
+                      <option value="50000">50,000</option>
+                      <option value="100000">1,00,000</option>
+                      <option value="150000">1,50,000</option>
+                      <option value="200000">2,00,000</option>
+                      <option value="250000">2,50,000</option>
+                      <option value="300000">3,00,000</option>
+                      <option value="350000">3,50,000</option>
+                      <option value="400000">4,00,000</option>
+                      <option value="400000">4,00,000</option>
+                      <option value="450000">4,50,000</option>
+                      <option value="500000">5,00,000</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                      <option disabled selected value>Policy Term:</option>
+                      <option value="3.5m">3.5 Months</option>
+                      <option value="6.5m">6.5 Months</option>
+                      <option value="9.5m">9.5 Months</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="insuredAge" id="insuredAgeProd" class="insuredAgePros">
+                      <option disabled selected value>Insured Age:</option>
+                      <option value="0-45">0-45</option>
+                      <option value="46-65">46-65</option>
+                      <option value="above65">Above 65</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="members2Age" id="members2AgePros">
+                      <option disabled selected value>Members 2 Age:</option>
+                      <option value="0-45">0-45</option>
+                      <option value="46-65">46-65</option>
+                      <option value="above65">Above 65</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="members3Age" id="members3AgePros">
+                      <option disabled selected value>Members 3 Age:</option>
+                      <option value="none">none</option>
+                  </select>
+              </li>
+              <li>
+                  <select  name="members4Age" id="members4AgePros">
+                      <option disabled selected value>Members 4 Age:</option>
+                      <option value="none">none</option>
+                  </select>
+              </li>
+              <li class="mainproductsearch_btn">
+                  <button value="21" class="promainbtn">Search</button>
+              </li>
+          </ol>
+      </div>
+      <div class="productaccident promain_box promain_22">
+        <ol class="mainproduct_ol accident_ol1">
+            <li>
+                <i class="fas fa-user-graduate"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">STUDENT</p>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsured" class="sumInsPros">
+                    <optgroup>
+                        <option disabled selected value>Sum Insured (INR):</option>
+                        <option value="50000">50000</option>
+                        <option value="100000">100000</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <select  name="scheme" id="schemePros">
+                    <option disabled selected value>Scheme:</option>
+                    <option value="op1">School StudentCare Insurance</option>
+                    <option value="op2">College Student Care Insurance</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="22" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="productaccident promain_box promain_23">
+        <ol class="mainproduct_ol accident_ol2">
+            <li>
+                <i class="fas fa-car-crash"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Family Accident Care Insurance Policy</p>
+            </li>
+            <li>
+                <select  name="sumInsured" id="sumInsured" class="sumInsPros">
+                    <optgroup>
+                        <option disabled selected value>Sum Insured (INR):</option>
+                        <option value="100000">100000</option>
+                        <option value="150000">150000</option>
+                        <option value="200000">200000</option>
+                        <option value="250000">250000</option>
+                        <option value="300000">300000</option>
+                        <option value="350000">350000</option>
+                        <option value="400000">400000</option>
+                        <option value="450000">450000</option>
+                        <option value="500000">500000</option>
+                        <option value="550000">550000</option>
+                        <option value="600000">600000</option>
+                        <option value="650000">650000</option>
+                        <option value="700000">700000</option>
+                        <option value="750000">750000</option>
+                        <option value="800000">800000</option>
+                        <option value="850000">850000</option>
+                        <option value="900000">900000</option>
+                        <option value="950000">950000</option>
+                        <option value="1000000">1000000</option>
+                        <option value="1500000">1500000 & Above</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <select  name="policyTerm" id="policyTermPros" class="policyTermPros">
+                    <option disabled selected value>Policy Term:</option>
+                    <option value="1yrs">1 yr</option>
+                    <option value="2yrs">2 yr</option>
+                </select>
+            </li>
+            <li class="mainproductsearch_btn">
+                <button value="23" class="promainbtn">Search</button>
+            </li>
+        </ol>
+      </div>
+      <div class="productaccident promain_box promain_24">
+        <ol class="mainproduct_ol accident_ol3">
+            <li>
+                <i class="fas fa-user-injured"></i>
+            </li>
+            <li>
+                <p class="mainproduct_p proheading">Accident Care Individual Insurance Policy</p>
+            </li>
+            <li>
+                <p class="mainproduct_p">This plan is under development very soon it will be available</p>
+            </li>
+        </ol>
+      </div>
+  </div>
+
+    <!-- here Footer is ft denotes footer -->
+    <hr />
+    <footer class="ft footer">
+      <a href="" class="ft_logo">
+        <img src="/images/treelogo.svg" alt="" />
+        <div class="logoname">
+          Vertical<span class="logo_green">Growth</span>
+        </div>
+      </a>
+
+      <div class="ft_social">
+        <a href="#">
+          <img src="/images/icon-facebook.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-twitter.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-pinterest.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-youtube.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-instagram.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="ft_link link_col1">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Home</a>
+      </div>
+
+      <div class="ft_link link_col2">
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="ft_linklast hide-for-mobile link_col3">
+        <a href="#">HealthInsurance</a>
+        <a href="#">LifeInsurance</a>
+        <a href="#">HomeLoan</a>
+      </div>
+
+      <div class="ft_cta">
+        <a href="" class="button">Request callback</a>
+      </div>
+      <div class="ft_copyright">
+        &copy; VerticalGrowth. All Rights Reserved
+        <p class="ft_developer hide-for-desktop">
+          { Developer : Prabhat Kubal }
+        </p>
+        <p class="ft_developer hide-for-mobile">
+          - - - - - { Developer : Prabhat Kubal } - - - - -
+        </p>
+      </div>
+    </footer>
+     <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0-rc.1/dist/js.cookie.min.js"></script>
+     <script src="/app/js/script.js"></script>
+     <script>
+
+
+    //For productdata.html for product heading stored in cookies
+    var proTitle1 = document.querySelectorAll(".proheading")[0].innerHTML;
+    var proTitle2 = document.querySelectorAll(".proheading")[1].innerHTML;
+    var proTitle3 = document.querySelectorAll(".proheading")[2].innerHTML;
+    var proTitle4 = document.querySelectorAll(".proheading")[3].innerHTML;
+    var proTitle5 = document.querySelectorAll(".proheading")[4].innerHTML;
+    var proTitle6 = document.querySelectorAll(".proheading")[5].innerHTML;
+    var proTitle7 = document.querySelectorAll(".proheading")[6].innerHTML;
+    var proTitle8 = document.querySelectorAll(".proheading")[7].innerHTML;
+    var proTitle9 = document.querySelectorAll(".proheading")[8].innerHTML;
+    var proTitle10 = document.querySelectorAll(".proheading")[9].innerHTML;
+    var proTitle11 = document.querySelectorAll(".proheading")[10].innerHTML;
+    var proTitle12 = document.querySelectorAll(".proheading")[11].innerHTML;
+    var proTitle13 = document.querySelectorAll(".proheading")[12].innerHTML;
+    var proTitle14 = document.querySelectorAll(".proheading")[13].innerHTML;
+    var proTitle15 = document.querySelectorAll(".proheading")[14].innerHTML;
+    var proTitle16 = document.querySelectorAll(".proheading")[15].innerHTML;
+    var proTitle17 = document.querySelectorAll(".proheading")[16].innerHTML;
+    var proTitle18 = document.querySelectorAll(".proheading")[17].innerHTML;
+    var proTitle19 = document.querySelectorAll(".proheading")[18].innerHTML;
+    var proTitle20 = document.querySelectorAll(".proheading")[19].innerHTML;
+    var proTitle21 = document.querySelectorAll(".proheading")[20].innerHTML;
+    var proTitle22 = document.querySelectorAll(".proheading")[21].innerHTML;
+    var proTitle23 = document.querySelectorAll(".proheading")[22].innerHTML;
+    var proTitle24 = document.querySelectorAll(".proheading")[23].innerHTML;
+         
+    
+    //For productmain.html and all products Num of Buttons or anchors
+
+    var numOfpromainBtn = document.querySelectorAll(".promainbtn").length;
+    var promainBtn = document.querySelectorAll(".promainbtn");
+
+    /*Health Insurance Main Product classes of Selected Options Values*/
+    var sumInsPro1 = document.querySelectorAll(".sumInsPros")[0];
+    var sumInsPro2 = document.querySelectorAll(".sumInsPros")[1];
+    var sumInsPro3 = document.querySelectorAll(".sumInsPros")[2];
+    var sumInsPro4 = document.querySelectorAll(".sumInsPros")[3];
+    var sumInsPro5 = document.querySelectorAll(".sumInsPros")[4];
+    var sumInsPro6 = document.querySelectorAll(".sumInsPros")[5];
+    var sumInsPro7 = document.querySelectorAll(".sumInsPros")[6];
+    var sumInsPro8 = document.querySelectorAll(".sumInsPros")[7];
+    var sumInsPro10 = document.querySelectorAll(".sumInsPros")[8];
+    var sumInsPro12 = document.querySelectorAll(".sumInsPros")[9];
+    var sumInsPro13 = document.querySelectorAll(".sumInsPros")[10];
+    var sumInsPro14 = document.querySelectorAll(".sumInsPros")[11];
+    var sumInsPro17 = document.querySelectorAll(".sumInsPros")[12];
+    var sumInsPro18 = document.querySelectorAll(".sumInsPros")[13];
+    var sumInsPro19 = document.querySelectorAll(".sumInsPros")[14];
+    var sumInsPro20 = document.querySelectorAll(".sumInsPros")[15];
+    var sumInsPro21 = document.querySelectorAll(".sumInsPros")[16];
+    var sumInsPro22 = document.querySelectorAll(".sumInsPros")[17];
+    var sumInsPro23 = document.querySelectorAll(".sumInsPros")[18];
+
+    var ageBandPro1 = document.querySelectorAll(".ageBandPros")[0];
+    var ageBandPro2 = document.querySelectorAll(".ageBandPros")[1];
+    var ageBandPro3 = document.querySelectorAll(".ageBandPros")[2];
+    var ageBandPro5 = document.querySelectorAll(".ageBandPros")[3];
+    var ageBandPro6 = document.querySelectorAll(".ageBandPros")[4];
+    var ageBandPro7 = document.querySelectorAll(".ageBandPros")[5];
+    var ageBandPro8 = document.querySelectorAll(".ageBandPros")[6];
+    var ageBandPro9 = document.querySelectorAll(".ageBandPros")[7];
+    var ageBandPro10 = document.querySelectorAll(".ageBandPros")[8];
+    var ageBandPro11 = document.querySelectorAll(".ageBandPros")[9];
+    var ageBandPro12 = document.querySelectorAll(".ageBandPros")[10];
+    var ageBandPro13 = document.querySelectorAll(".ageBandPros")[11];
+    var ageBandPro16 = document.querySelectorAll(".ageBandPros")[12];
+    var ageBandPro17 = document.querySelectorAll(".ageBandPros")[13];
+    var ageBandPro18 = document.querySelectorAll(".ageBandPros")[14];
+
+    var policyTermPro4 = document.querySelectorAll(".policyTermPros")[0];
+    var policyTermPro6 = document.querySelectorAll(".policyTermPros")[1];
+    var policyTermPro8 = document.querySelectorAll(".policyTermPros")[2];
+    var policyTermPro17 = document.querySelectorAll(".policyTermPros")[3];
+    var policyTermPro18 = document.querySelectorAll(".policyTermPros")[4];
+    var policyTermPro20_1 = document.querySelectorAll(".policyTermPros")[5];
+    var policyTermPro20_2 = document.querySelectorAll(".policyTermPros")[6];
+    var policyTermPro21 = document.querySelectorAll(".policyTermPros")[7];
+    var policyTermPro23 = document.querySelectorAll(".policyTermPros")[8];
+
+    var policyTypePro6 = document.querySelectorAll(".policyTypePros")[0];
+    var policyTypePro7 = document.querySelectorAll(".policyTypePros")[1];
+    var policyTypePro8 = document.querySelectorAll(".policyTypePros")[2];
+    var policyTypePro9 = document.querySelectorAll(".policyTypePros")[3];
+    var policyTypePro10 = document.querySelectorAll(".policyTypePros")[4];
+    var policyTypePro11 = document.querySelectorAll(".policyTypePros")[5];
+    var policyTypePro12 = document.querySelectorAll(".policyTypePros")[6];
+    var policyTypePro17 = document.querySelectorAll(".policyTypePros")[7];
+
+    var zonePro7 = document.querySelectorAll(".zonePros")[0]
+    var zonePro18 = document.querySelectorAll(".zonePros")[1]
+     
+    //Ony for product with value 21
+    var insuredAgePro21 = document.getElementById("insuredAgePros");
+    var members2AgePro21 = document.getElementById("members2AgePros");
+    var members3AgePro21 = document.getElementById("members3AgePros");
+    var members4AgePro21 = document.getElementById("members4AgePros");
+
+    var planTypePro2 = document.querySelectorAll(".planTypePros")[0];
+    var planTypePro3 = document.querySelectorAll(".planTypePros")[1];
+    var planTypePro13 = document.querySelectorAll(".planTypePros")[2];
+    var planTypePro14 = document.querySelectorAll(".planTypePros")[3];
+    var planTypePro17 = document.querySelectorAll(".planTypePros")[4];
+
+    //only for product with value 12
+    var ChildPro12 = document.getElementById("ChildPros");
+    var P1AgePro12 = document.getElementById("P1AgePros");
+    var P2AgePro12 = document.getElementById("P2AgePros");
+    var P3AgePro12 = document.getElementById("P3AgePros");
+    var P4AgePro12 = document.getElementById("P4AgePros");
+    
+    var deductiblePro13 = document.getElementById("deductiblePros");
+
+    var membersPro13 = document.querySelectorAll(".membersPros")[0]
+    var membersPro14 = document.querySelectorAll(".membersPros")[1]
+
+    var schemePro22 = document.getElementById("schemePros");
+    
+    // Forselected values of radio buttons
+
+    // document.getElementsByName('policy-typepro3') 
+    //     .forEach (radio => {
+    //         if (radio.checked) {
+    //             console.log(radio.value);
+    //         }
+    //     });
+    
+    // New For selected values of radio field
+    var policytypepro3 = document.querySelector('input[name="policy-typepro3"]:checked').value
+    var policytypepro4 = document.querySelector('input[name="policy-typepro4"]:checked').value   
+
+    //For product 4 senior citizen floster-2A selection options display toggle
+    if (document.querySelector('input[name="policy-typepro4"]')) {
+        document.querySelectorAll('input[name="policy-typepro4"]').forEach((elem) => {
+            elem.addEventListener("change", function(event) {
+                var item = event.target.value;
+                if (item == "floater-2A") {
+                    document.querySelectorAll(".indiv1A-sel")[0].style.display = 'none';
+                    document.querySelectorAll(".indiv1A-sel")[1].style.display = 'none';
+                    document.querySelectorAll(".indiv1A-sel")[2].style.display = 'none';
+                    document.querySelectorAll(".indiv1A-sel")[3].style.display = 'none';
+                    document.querySelectorAll(".indiv1A-sel")[4].style.display = 'none';
+                    document.querySelectorAll(".indiv1A-sel")[5].style.display = 'none';
+                }
+                else {
+                    document.querySelectorAll(".indiv1A-sel")[0].style.display = 'block';
+                    document.querySelectorAll(".indiv1A-sel")[1].style.display = 'block';
+                    document.querySelectorAll(".indiv1A-sel")[2].style.display = 'block';
+                    document.querySelectorAll(".indiv1A-sel")[3].style.display = 'block';
+                    document.querySelectorAll(".indiv1A-sel")[4].style.display = 'block';
+                    document.querySelectorAll(".indiv1A-sel")[5].style.display = 'block';
+                }
+            });
+        });
+    }
+
+    // /*Health Insurance Main Product Selected Options Values*/
+    // var sumInsProd = document.getElementById("sumInsProd");
+    // var ageBandProd = document.getElementById("ageBandProd");
+    // var policyTermProd = document.getElementById("policyTermProd");
+    // var insuredAgeProd = document.getElementById("insuredAgeProd");
+    // var members2AgeProd = document.getElementById("members2AgeProd");
+    // var members3AgeProd = document.getElementById("members3AgeProd");
+    // var members4AgeProd = document.getElementById("members4AgeProd");
+    // var planTypeProd = document.getElementById("planTypeProd");
+    // var ChildProd = document.getElementById("ChildProd");
+    // var P1AgeProd = document.getElementById("P1AgeProd");
+    // var P2AgeProd = document.getElementById("P2AgeProd");
+    // var P3AgeProd = document.getElementById("P3AgeProd");
+    // var P4AgeProd = document.getElementById("P4AgeProd");
+    // var deductibleProd = document.getElementById("deductibleProd");
+    // var membersProd = document.getElementById("membersProd");
+
+    for (var f = 0; f < numOfpromainBtn; f++) {
+            document.querySelectorAll(".promainbtn")[f].addEventListener("click", function () {
+                var promainValue = this.value;
+
+                Cookies.set("promainVal", promainValue, { sameSite: 'strict', secure: true }, {path:"/productdata.html"}, {expires: 2});
+          
+                window.location.href = "/productdata.html", "_self";
+
+
+                if (promainValue) {
+                    switch (promainValue) {
+
+                        case "1":
+                        Cookies.set("proTitle", proTitle1, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro1.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("agebandProd", ageBandPro1.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "2":
+                            Cookies.set("proTitle", proTitle2, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro2.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro2.value, { sameSite: 'strict', secure: true}, { path: "/productdata.html"}, { expires: 2000});
+                            Cookies.set("plantypeProd", planTypePro2.value, { sameSite: 'strict', secure: true}, { path: "/productdata.html"}, { expires: 2000});
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "3":
+                            Cookies.set("proTitle", proTitle3, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro3.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro3.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("plantypeProd", planTypePro3.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypepro", policytypepro3, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "4":
+                            Cookies.set("proTitle", proTitle4, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro4.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd", policyTermPro4.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypepro", policytypepro4, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "5":
+                            Cookies.set("proTitle", proTitle5, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro5.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro5.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "6":
+                            Cookies.set("proTitle", proTitle6, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro6.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro6.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro6.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd", policyTermPro6.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "7":
+                            Cookies.set("proTitle", proTitle7, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro7.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro7.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro7.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("zoneProd", zonePro7.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "8":
+                            Cookies.set("proTitle", proTitle8, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro8.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro8.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro8.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd", policyTermPro8.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            // Cookies.set("plantypeProd", planTypeProd.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "9":
+                            Cookies.set("proTitle", proTitle9, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("agebandProd", ageBandPro9.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro9.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "10":
+                            Cookies.set("proTitle", proTitle10, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro10.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro10.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro10.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "11":
+                            Cookies.set("proTitle", proTitle11, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("agebandProd", ageBandPro11.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro11.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "12":
+                            Cookies.set("proTitle", proTitle12, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("childProd", ChildPro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("p1ageProd", P1AgePro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("p2ageProd", P2AgePro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("p3ageProd", P3AgePro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("p4ageProd", P4AgePro12.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "13":
+                            Cookies.set("proTitle", proTitle13, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro13.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro13.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("plantypeProd", planTypePro13.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("deductibleProd", deductiblePro13.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("membersProd", membersPro13.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "14":
+                            Cookies.set("proTitle", proTitle14, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsProd.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("plantypeProd", planTypePro14.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("membersProd", membersPro14.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "15":
+                            Cookies.set("proTitle", proTitle15, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "16":
+                            Cookies.set("proTitle", proTitle16, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("agebandProd", ageBandPro16.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "17":
+                            Cookies.set("proTitle", proTitle17, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro17.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro17.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytypeProd", policyTypePro17.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("plantypeProd", planTypePro17.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd", policyTermPro17.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "18":
+                            Cookies.set("proTitle", proTitle18, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro18.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("agebandProd", ageBandPro18.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd", policyTermPro18.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("zoneProd", zonePro18.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "19":
+                            Cookies.set("proTitle", proTitle19, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro19.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "20":
+                            Cookies.set("proTitle", proTitle20, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsProd.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd201", policyTermPro20_1.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd202", policyTermPro20_2.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "21":
+                            Cookies.set("proTitle", proTitle21, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro21.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd", policyTermPro21.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("insuredageProd", insuredAgePro21.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("members2ageProd", members2AgePro21.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("members3ageProd", members3AgePro21.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("members4ageProd", members4AgePro21.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "22":
+                            Cookies.set("proTitle", proTitle22, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro22.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("schemeProd", schemePro22.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                             window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "23":
+                            Cookies.set("proTitle", proTitle23, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                            Cookies.set("suminsProd", sumInsPro23.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                            Cookies.set("policytermProd", policyTermPro23.value, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2 });
+                             window.location.href = "/productdata.html", "_self";
+                            break;
+                        case "24":
+                            Cookies.set("proTitle", proTitle24, { sameSite: 'strict', secure: true }, { path: "/productdata.html" }, { expires: 2000 });
+                             window.location.href = "/productdata.html", "_self";
+                             break;
+                        default:
+                            break;
+                    }
+                }
+            });
+        }
+        
+     </script>
+  </body>
+</html>
