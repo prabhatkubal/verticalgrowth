@@ -46,6 +46,7 @@ hamburgerAnime.addEventListener('click', function () {
 });
 
 //Navigation Links
+
 navLinks[3].addEventListener('click', function () {
     product[0].style.display = 'block';
     product[1].style.display = 'block';
@@ -55,6 +56,17 @@ navLinks[3].addEventListener('click', function () {
     product[5].style.display = 'block';
     product[6].style.display = 'block';
 });
+
+// navLinks.forEach((link, [3]) => {
+//     product[0].style.display = 'block';
+//     product[1].style.display = 'block';
+//     product[2].style.display = 'block';
+//     product[3].style.display = 'block';
+//     product[4].style.display = 'block';
+//     product[5].style.display = 'block';
+//     product[6].style.display = 'block';
+// });
+
 
 // Animated Slider for feature section
 const arrowPrev = document.querySelector('.f_left');
@@ -163,21 +175,28 @@ if(arrowNext && arrowPrev) {
 }
 
 //Contact Form
+
 // var firstName = document.getElementById('firstName').value;
 // var lastName = document.getElementById('lastName').value;
 // var email = document.getElementById('email').value;
 // var phoneNumber = document.getElementById('phoneNumber').value;
 // var subject = document.getElementById('subject').value;
 // var message = document.getElementById('message').value;
+
+
+
 // var form = document.getElementById("form");
+
 // form.addEventListener('submit', function (e) {
 //     console.log([firstName, lastName, email, phoneNumber, subject, message]);
 // });
+
 // function clearForm() {
 //     document.getElementById("form").reset();
 // }
 
 //services Page
+
 var numOfServBtn = document.querySelectorAll('.serv_button').length;
 for (var i = 0; i < numOfServBtn; i++) {
     document.querySelectorAll('.serv_button')[i].addEventListener('click', function () {
@@ -191,42 +210,23 @@ for (var i = 0; i < numOfServBtn; i++) {
     });
 }
 
-//Function for making cookies
-function setCookie(name, value, options = {}) {
+// //For Hr Tag that comes from right in the footer section
 
-    options = {
-      path: '/',
-      // add other defaults here if necessary
-      ...options
-    };
-  
-    if (options.expires instanceof Date) {
-      options.expires = options.expires.toUTCString();
-    }
-  
-    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-  
-    for (let optionKey in options) {
-      updatedCookie += "; " + optionKey;
-      let optionValue = options[optionKey];
-      if (optionValue !== true) {
-        updatedCookie += "=" + optionValue;
-      }
-    }
-  
-    document.cookie = updatedCookie;
-  }
-// function createCookie(name,value,days) {
-//     if (days) {
-//         var date = new Date();
-//         date.setTime(date.getTime()+(days*24*60*60*1000));
-//         var expires = "; expires="+date.toGMTString();
+// function Scrollanime() {
+//     var screenPosition = window.innerHeight;
+
+//     var hr = document.querySelector("hr").getBoundingClientRect().top;
+
+//     if (hr < (screenPosition / 1.2)) {
+//         document.querySelector("hr").classList.add('hr_frm_rt');
+
 //     }
-//     else var expires = "";
-//     document.cookie = name+"="+value+expires+"; path=/";
 // }
 
+// window.addEventListener('scroll', Scrollanime);
+
 //For productlist.html and all products Num of Buttons or anchors
+
 var numOfProbtns = document.querySelectorAll(".pro_btn").length;
 var proBtn = document.querySelectorAll(".pro_btn");
 
@@ -237,8 +237,8 @@ if (proBtn) {
             var proValue = this.value;
 
             //   document.cookie = 'productVal=; SameSite=None; Secure'; + proValue;
-            // createCookie('theVal', proValue, 1); path="";
-            Cookies.set("productVal", proValue, { sameSite: 'Lax', secure: true }, { path: "/productmain.html" }, { expires: 2 });
+
+            Cookies.set("productVal", proValue, { sameSite: 'strict', secure: true }, { path: "/productmain.html" }, { expires: 2 });
 
             window.location.href = "/productmain.html", "_self";
 

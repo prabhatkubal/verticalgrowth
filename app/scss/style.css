@@ -1615,7 +1615,7 @@ hr {
 
 .about_main,
 .abt_main {
-  height: 80vh;
+  height: 75vh;
   padding: 1.5em 1.5em;
   margin-bottom: 1rem;
   display: -webkit-box;
@@ -1764,7 +1764,7 @@ hr {
 @media (min-width: 40em) {
   .about_main .img-arrow-down,
   .abt_main .img-arrow-down {
-    bottom: 4%;
+    bottom: 7%;
   }
 }
 
