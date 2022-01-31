@@ -700,7 +700,7 @@ hr {
 
 .features,
 .f {
-  background-image: url("/images/RectLight.svg");
+  background-image: url("../../images/RectLight.svg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-color: #fafafa;
