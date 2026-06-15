@@ -867,7 +867,7 @@ hr {
 
 .articles,
 .a {
-  background-image: url("/images/RectLight-flip.svg");
+  background-image: url("../../images/RectLight-flip.svg");
   background-repeat: no-repeat;
   background-position: 50% 0%;
   margin-top: -1px;
@@ -1422,7 +1422,7 @@ hr {
 
 .services,
 .serv {
-  background-image: url("/images/SVG/Animated Shape.svg");
+  background-image: url("../../images/SVG/Animated Shape.svg");
   background-repeat: space;
   background-size: contain;
 }
@@ -1671,28 +1671,28 @@ hr {
 
 .about_main .image ul :nth-child(1),
 .abt_main .image ul :nth-child(1) {
-  content: url("/gif/debitcard.gif");
+  content: url("../../gif/debitcard.gif");
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
 
 .about_main .image ul :nth-child(2),
 .abt_main .image ul :nth-child(2) {
-  content: url("/gif/money.gif");
+  content: url("../../gif/money.gif");
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
 
 .about_main .image ul :nth-child(3),
 .abt_main .image ul :nth-child(3) {
-  content: url("/gif/home.gif");
+  content: url("../../gif/home.gif");
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
 
 .about_main .image ul :nth-child(4),
 .abt_main .image ul :nth-child(4) {
-  content: url("/gif/pigibank.gif");
+  content: url("../../gif/pigibank.gif");
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
@@ -1926,7 +1926,7 @@ hr {
       -ms-flex-pack: start;
           justify-content: flex-start;
   overflow: hidden;
-  background-image: url("/images/SVG/MassCircles.svg");
+  background-image: url("../../images/SVG/MassCircles.svg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
@@ -2073,7 +2073,7 @@ hr {
 .products_image {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/images/productlist_01.jpg");
+  background-image: url("../../images/productlist_01.jpg");
   content: "";
   height: 22rem;
   width: 17.5rem;

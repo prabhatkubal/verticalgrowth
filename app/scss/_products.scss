@@ -1,6 +1,6 @@
 .pro,
 .products {
-  // background-image: url("/images/SVG/SprinkleDark.svg");
+  // background-image: url("../../images/SVG/SprinkleDark.svg");
   // background-size: contain;
   // background-repeat: repeat;
   // content: "";
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
-    background-image: url("/images/SVG/MassCircles.svg");
+    background-image: url("../../images/SVG/MassCircles.svg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
@@ -110,7 +110,7 @@
   &_image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/images/productlist_01.jpg");
+    background-image: url("../../images/productlist_01.jpg");
     content: "";
     height: 22rem;
     width: 17.5rem;

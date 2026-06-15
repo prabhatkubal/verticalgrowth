@@ -43,19 +43,19 @@
       position: relative;
 
       :nth-child(1) {
-        content: url("/gif/debitcard.gif");
+        content: url("../../gif/debitcard.gif");
         transition: 0.5s all ease-in-out;
       }
       :nth-child(2) {
-        content: url("/gif/money.gif");
+        content: url("../../gif/money.gif");
         transition: 0.5s all ease-in-out;
       }
       :nth-child(3) {
-        content: url("/gif/home.gif");
+        content: url("../../gif/home.gif");
         transition: 0.5s all ease-in-out;
       }
       :nth-child(4) {
-        content: url("/gif/pigibank.gif");
+        content: url("../../gif/pigibank.gif");
         transition: 0.5s all ease-in-out;
       }
 

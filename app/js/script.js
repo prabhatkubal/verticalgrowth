@@ -204,9 +204,9 @@ for (var i = 0; i < numOfServBtn; i++) {
 
         // document.cookie = 'serviceVal=' + servBtnVal;
 
-        Cookies.set("serviceVal", servBtnVal, { sameSite: 'strict', secure: true }, { path: "/products.html" }, { expires: 2 });
+        Cookies.set("serviceVal", servBtnVal, { sameSite: 'strict', secure: true }, { path: "/" }, { expires: 2 });
 
-        window.location.href = "/products.html", "_self";
+        window.location.href = "products.html", "_self";
     });
 }
 
@@ -238,9 +238,9 @@ if (proBtn) {
 
             //   document.cookie = 'productVal=; SameSite=None; Secure'; + proValue;
 
-            Cookies.set("productVal", proValue, { sameSite: 'strict', secure: true }, { path: "/productmain.html" }, { expires: 2 });
+            Cookies.set("productVal", proValue, { sameSite: 'strict', secure: true }, { path: "/" }, { expires: 2 });
 
-            window.location.href = "/productmain.html", "_self";
+            window.location.href = "productmain.html", "_self";
 
         });
     }
@@ -397,9 +397,9 @@ if (productCookie) {
 
 //         //   document.cookie = 'promainVal=' + promainValue;
 
-//           Cookies.set("promainVal", promainValue, { sameSite: 'strict', secure: true }, {path:"/productdata.html"}, {expires: 2});
+//           Cookies.set("promainVal", promainValue, { sameSite: 'strict', secure: true }, {path:"/"}, {expires: 2});
 
-//           window.location.href = "/productdata.html", "_self";
+//           window.location.href = "productdata.html", "_self";
 
 //         });
 //       }
